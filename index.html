@@ -85,102 +85,71 @@
         </section>
 
         <section class="about-me-container" id="about">
-    <h2 class="about-title">A little more about me..</h2>
-    <div class="about-paragraphs">
-        <p class="about-p0">
-            Italian, 31 y.o.
-        </p>
+            <h2 class="about-title">A little more about me..</h2>
+            <div class="about-paragraphs">
+                <p class="about-p0">
+                    Italian, 31 y.o.
+                </p>
 
-        <div class="about-par p1">
-            <p>
-                After graduating in Civil Engineering in 2018, I spent several years working around the world—from Australia to Norway and Italy—as a chef. <br>
-                Those years taught me more than any textbook: adaptability, leadership, and the value of human connection. <br>
-                In 2024, I decided to challenge myself once again and dove into Data Science—my new professional playground.
-            </p>
-            <img src="/assets/img/icons/engineering-helmet-cog-svgrepo-com.svg" alt="">
-        </div>
+                <div class="about-par p1">
+                    <p>
+                        After graduating in Civil Engineering in 2018, I spent several years working around the world—from Australia to Norway and Italy—as a chef. <br>
+                        Those years taught me more than any textbook: adaptability, leadership, and the value of human connection. <br>
+                        In 2024, I decided to challenge myself once again and dove into Data Science—my new professional playground.
+                    </p>
+                    <img src="/assets/img/icons/engineering-helmet-cog-svgrepo-com.svg" alt="">
+                </div>
 
-        <div class="about-par p2">
-            <p>
-                I'm a slow traveller and digital nomad. I've explored Europe, Australia, Southeast Asia and Morocco, always side by side with my travel and life partner. <br>
-                I design custom itineraries for curious souls and love sharing what it's like to live and work while exploring the world. <br>
-                Scuba diver since 2023 (still negotiating peace with sharks 🦈).
-            </p>
-            <img src="/assets/img/icons/van-svgrepo-com.svg" alt="">
-        </div>
+                <div class="about-par p2">
+                    <p>
+                        I'm a slow traveller and digital nomad. I've explored Europe, Australia, Southeast Asia and Morocco, always side by side with my travel and life partner. <br>
+                        I design custom itineraries for curious souls and love sharing what it's like to live and work while exploring the world. <br>
+                        Scuba diver since 2023 (still negotiating peace with sharks 🦈).
+                    </p>
+                    <img src="/assets/img/icons/van-svgrepo-com.svg" alt="">
+                </div>
 
-        <div class="about-par p3">
-            <p>
-                Today I combine my analytical mindset with creativity. I build data-driven solutions using Python, SQL, and machine learning.<br>
-                I'm passionate about finding insights that make an impact—whether it's improving user experience, optimizing operations, or making smarter travel choices.
-            </p>
-            <img src="/assets/img/icons/web-development-svgrepo-com.svg" alt="">
-        </div>
+                <div class="about-par p3">
+                    <p>
+                        Today I combine my analytical mindset with creativity. I build data-driven solutions using Python, SQL, and machine learning.<br>
+                        I'm passionate about finding insights that make an impact—whether it's improving user experience, optimizing operations, or making smarter travel choices.
+                    </p>
+                    <img src="/assets/img/icons/web-development-svgrepo-com.svg" alt="">
+                </div>
 
-        <div class="about-par last-paragraph">
-            <p>
-                I'm building a life that blends freedom and purpose—working remotely, growing as a data scientist, and inspiring others to design their own path.
-            </p>
-        </div>
-    </div>
+                <div class="about-par last-paragraph">
+                    <p>
+                        I'm building a life that blends freedom and purpose—working remotely, growing as a data scientist, and inspiring others to design their own path.
+                    </p>
+                </div>
+            </div>
 
-    <div class="cv-link">
-        <a class="button contact-me-button cv-button" href="/curriculum.html" target="_blank">Curriculum Vitae</a>
-    </div>
-</section>
+            <div class="cv-link">
+                <a class="button contact-me-button cv-button" href="/curriculum.html" target="_blank">Curriculum Vitae</a>
+            </div>
+        </section>
 
 
-        <div class="contact-me-container">
-            <a name="contact-me"></a> <!--FORM-->
+        <section id="contact-me" class="contact-me-container">
             <h2 class="contact-me-title">Contact Me</h2>
-
-            <form name="contact-me-form" id="contact-me-form" method="post" class="contact-me-form">
-                <div class="first-row">
-                    <div class="form-row">
-                        <label for="user_name" class="label fn-label">First Name</label>
-                        <input id="user_name" class="input fn-input" name="user_name" placeholder="Your Name" type="text" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="last-name" class="label ln-label">Last Name</label>
-                        <input id="last-name" class="input ln-input" name="last-name" placeholder="Your Surname" type="text" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <label for="user_email" class="label email-label">Email</label>
-                    <input id="user_email" class="input email-input" name="user_email" type="email"
-                    placeholder="email@example.com" required>
-                </div>
-                <div class="form-row last-row">
-                    <label for="message" id="message-label" class="label mess-label">Message</label>
-                    <textarea id="message" name="message" placeholder="Type your text . ." class="input mess-input" required></textarea>
-                </div>
-                    <button id="button" type="submit" name="submit" class="submit-button">Submit</button>
-            </form>
-        </div>
-
-        <script type="text/javascript">
-            window.onload = function() {
-                document.getElementById('contact-me-form').addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    emailjs.sendForm('service_yrvlta1', 'contact_form', this)
-                        .then(res=>{
-                            document.getElementById("user_name").value = "";
-                            document.getElementById("last-name").value = "";
-                            document.getElementById("user_email").value = "";
-                            document.getElementById("message").value = "";
-                            console.log(res);
-                        alert("Message sent successfully!!");
-                    }).catch(err=>console.log(err));
-                });
-            }
-        </script>
+            <ul class="contact-list">
+                <li>
+                    <strong>Email:</strong>
+                    <a href="mailto:paoloacone.93@gmail.com">paoloacone.93@gmail.com</a>
+                </li>
+                <li>
+                    <strong>LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/paoloacone/" target="_blank">linkedin.com/in/paoloacone</a>
+                </li>
+            </ul>
+        </section>
         
         <footer class="page-footer">
             <div class="social">
                 Follow me on:
-                <a href="https://www.facebook.com/paolo.acone/"><img class="social-icons icon-1" src="/assets/img/iconmonstr-facebook-3.svg" alt="link to facebook profile"></a>
-                <a href="https://www.instagram.com/paoloacone/?hl=it"><img class="social-icons" src="/assets/img/iconmonstr-instagram-13.svg" alt="link to instagram profile"></a>
-                <a href="https://github.com/pacone11"><img class="social-icons" src="/assets/img/iconmonstr-github-3.svg" alt="link to github"></a>
+                <a href="https://www.facebook.com/paolo.acone/" target="_blank" rel="noopener noreferrer"><img class="social-icons icon-1" src="/assets/img/iconmonstr-facebook-3.svg" alt="link to facebook profile"></a>
+                <a href="https://www.instagram.com/paoloacone/?hl=it" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="/assets/img/iconmonstr-instagram-13.svg" alt="link to instagram profile"></a>
+                <a href="https://github.com/pacone11" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="/assets/img/iconmonstr-github-3.svg" alt="link to github"></a>
             </div>
         </footer>       
 </body>

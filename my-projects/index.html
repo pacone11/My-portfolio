@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
     <meta name="keywords" content="HTML, CSS, Portfolio, Web developer, My projects">
     <meta name="description" content="This is my Portfolio, here you will find my projects."/>
@@ -57,69 +59,155 @@
             </ul>
         </div>
     </nav>
-    <div class="my-proj-container">
-        <a name="my-projects"></a>
-        <h1 class="title">My Projects</h1>
-        <h2 class="subtitle">Here you can find some of the projects I worked on:</h2> 
-        <div class="work-icon-container">
-            <img class="work-in-progress-icon" src="/assets/img/danger-zone-svgrepo-com.svg" alt="">
-        </div>
-        <p>
-            <h3><strong>WORK IN PROGRESS...</strong></h3>
-        </p>
 
-    </div>
+    <main>
+        <section class="portfolio">
+            <h1>My Projects</h1>
+            <h3>Dive into my Data Science Journey</h3>
 
-    <div class="contact-me-container">
-        <a name="contact-me"></a>
-        <h2 class="contact-me-title">Contact Me</h2>
-
-        <form name="contact-me-form" id="contact-me-form" action="" method="post" class="contact-me-form">
-            <div class="first-row">
-                <div class="form-row">
-                    <label for="user_name" class="label fn-label">First Name</label>
-                    <input id="user_name" class="input fn-input" name="user_name" placeholder="Your Name" type="text" required>
+            <div class="grid">
+                <!-- Progetto 1 -->
+                 <div class="project-card" style="background-image: url(/assets/img/energy.jpg);">
+                    <div class="overlay">
+                        <h3>SQL Analysis</h3>
+                        <div class="tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">UN Goals</span>
+                        </div>
+                        <p>Analisi dati sugli Obiettivi di Sviluppo Sostenibile ONU. Focus su energia, crescita e disuguaglianze.</p>
+                        <a href="https://github.com/pacone11/SQL_project" class="github-link" target="_blank">
+                            <i class="fa-brands fa-github"></i> Codice su GitHub
+                        </a>
+                    </div>
                 </div>
-                <div class="form-row">
-                    <label for="last-name" class="label ln-label">Last Name</label>
-                    <input id="last-name" class="input ln-input" name="last-name" placeholder="Your Surname" type="text" required>
+
+                <!-- Progetto 2 -->
+                 <div class="project-card" style="background-image: url(/assets/img/trav_ag.jpg);">
+                    <div class="overlay">
+                        <h3>Travel CLI Manager</h3>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OOP</span>
+                            <span class="tag">CLI App</span>
+                        </div>
+                        <p>Gestione prenotazioni viaggio con menu interattivo da terminale. Interfaccia semplice, struttura modulare.</p>
+                        <a href="https://github.com/pacone11/Python_project" class="github-link" target="_blank">
+                            <i class="fa-brands fa-github"></i> Codice su GitHub
+                        </a>
+                    </div>
                 </div>
+
+                <!-- Progetto 3 -->
+                 <div class="project-card" style="background-image: url(/assets/img/file_org.jpg);">
+                    <div class="overlay">
+                        <h3>Python File Organizer</h3>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OS</span>
+                            <span class="tag">CLI</span>
+                        </div>
+                        <p>Script per organizzare file in cartelle, analizzare immagini e salvare log CSV. Comandi semplici via terminale.</p>
+                        <a href="https://github.com/pacone11/Numpy_project" class="github-link" target="_blank">
+                            <i class="fa-brands fa-github"></i> Codice su GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Progetto 4 -->
+                 <div class="project-card" style="background-image: url(/assets/img/wine.jpg);">
+                    <div class="overlay">
+                        <h3>Wine Reviews EDA</h3>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Data Viz</span>
+                        </div>
+                        <p>Analisi esplorativa su 130.000+ recensioni di vino. Identificazione pattern, qualità e regioni emergenti.</p>
+                        <a href="https://github.com/pacone11/Pandas_project" class="github-link" target="_blank">
+                            <i class="fa-brands fa-github"></i> Codice su GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Progetto 5 -->
+                 <div class="project-card" style="background-image: url(/assets/img/titanic.jpg);">
+                    <div class="overlay">
+                        <h3>Titanic Survival Model</h3>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Decision Tree</span>
+                            <span class="tag">ML</span>
+                        </div>
+                        <p>Modello predittivo per la sopravvivenza passeggeri. Feature engineering, metriche e validazione.</p>
+                        <a href="https://github.com/pacone11/Machine-learning_project" class="github-link" target="_blank">
+                            <i class="fa-brands fa-github"></i> Codice su GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Progetto 6 -->
+                 <div class="project-card" style="background-image: url(/assets/img/winery.jpg);">
+                    <div class="overlay">
+                        <h3>Wine Classifier</h3>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">ML</span>
+                            <span class="tag">SVC</span>
+                        </div>
+                        <p>Modello ML per classificare vini italiani in base alla composizione chimica. Tuning, scaling, cross-validation.</p>
+                        <a href="https://github.com/pacone11/Machine-learning-advanced_project" class="github-link" target="_blank">
+                            <i class="fa-brands fa-github"></i> Codice su GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Progetto 7 -->
+                 <div class="project-card" style="background-image: url(/assets/img/airline.jpg);">
+                    <div class="overlay">
+                        <h3>Flight Satisfaction ML</h3>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">RandomForest</span>
+                            <span class="tag">AdaBoost</span>
+                        </div>
+                        <p>Classificazione soddisfazione dei passeggeri. Feature selection, tuning, test set finale.</p>
+                        <a href="https://github.com/pacone11/Data-science-master_final-project" class="github-link" target="_blank">
+                            <i class="fa-brands fa-github"></i> Codice su GitHub
+                        </a>
+                    </div>
+                </div>
+                  
             </div>
-            <div class="form-row">
-                <label for="user_email" class="label email-label">Email</label>
-                <input id="user_email" class="input email-input" name="user_email" type="email"
-                placeholder="email@example.com" required>
+        </section>
+        
+        <section class="cv-download">
+            <div class="cv-link">
+                <a class="button contact-me-button cv-button" href="/curriculum.html" target="_blank">Curriculum Vitae</a>
             </div>
-            <div class="form-row last-row">
-                <label id="message" class="label mess-label" for="message">Message</label>
-                <textarea placeholder="Type your text . ." class="input mess-input" name="message" id="message" required></textarea>
-            </div>
-                <button id="button" type="submit" name="submit" class="submit-button">Submit</button>
-        </form>
-    </div>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-me-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                emailjs.sendForm('service_yrvlta1', 'contact_form', this)
-                    .then(res=>{
-                        document.getElementById("user_name").value = "";
-                        document.getElementById("last-name").value = "";
-                        document.getElementById("user_email").value = "";
-                        document.getElementById("message").value = "";
-                        console.log(res);
-                    alert("Message sent successfully!!");
-                }).catch(err=>console.log(err));
-            });
-        }
-    </script>
+        </section>
+
+        <section id="contact-me" class="contact-me-container">
+            <h2 class="contact-me-title">Contact Me</h2>
+            <ul class="contact-list">
+                <li>
+                    <strong>Email:</strong>
+                    <a href="mailto:paoloacone.93@gmail.com">paoloacone.93@gmail.com</a>
+                </li>
+                <li>
+                    <strong>LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/paoloacone/" target="_blank">linkedin.com/in/paoloacone</a>
+                </li>
+            </ul>
+        </section>
+  </main>
 
     <footer class="page-footer">
         <div class="social">
             Follow me on:
-            <a href="https://www.facebook.com/paolo.acone/"><img class="social-icons icon-1" src="/assets/img/iconmonstr-facebook-3.svg" alt="link to facebook profile"></a>
-            <a href="https://www.instagram.com/paoloacone/?hl=it"><img class="social-icons" src="/assets/img/iconmonstr-instagram-13.svg" alt="link to instagram profile"></a>
-            <a href="https://github.com/pacone11"><img class="social-icons" src="/assets/img/iconmonstr-github-3.svg" alt="link to github"></a>
+            <a href="https://www.facebook.com/paolo.acone/" target="_blank" rel="noopener noreferrer"><img class="social-icons icon-1" src="/assets/img/iconmonstr-facebook-3.svg" alt="link to facebook profile"></a>
+            <a href="https://www.instagram.com/paoloacone/?hl=it" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="/assets/img/iconmonstr-instagram-13.svg" alt="link to instagram profile"></a>
+            <a href="https://github.com/pacone11" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="/assets/img/iconmonstr-github-3.svg" alt="link to github"></a>
         </div>
         
     </footer>

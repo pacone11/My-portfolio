@@ -373,3 +373,52 @@ h1 {
 
 
 }
+
+
+
+.contact-me-container {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.contact-me-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+  color: white;
+}
+
+.contact-list li {
+  margin: 15px 0;
+}
+
+.contact-list a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.social-links a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #444;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+  color: #000;
+}
