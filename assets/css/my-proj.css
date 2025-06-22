@@ -153,4 +153,34 @@ h1 {
 }
 
 
+.cv-download {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.cv-download h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.cv-button {
+  display: inline-block;
+  background-color: #222;
+  color: #fff;
+  padding: 14px 24px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cv-button i {
+  margin-right: 8px;
+}
+
+.cv-button:hover {
+  background-color: #444;
+}
 
